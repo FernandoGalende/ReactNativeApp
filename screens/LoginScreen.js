@@ -5,7 +5,7 @@ import { StyleSheet, View, Text } from 'react-native';
 export default function LoginScreen() {
   return (
     <View style={styles.container}>
-      <Text>Login></Text>
+      <Text>Log In</Text>
     </View>
   );
 }
@@ -19,5 +19,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
