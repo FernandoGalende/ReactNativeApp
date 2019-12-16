@@ -4,11 +4,11 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 
 export default function LoginScreen({ navigation }) {
   return (
-    <View style={styles.container}>
-      <Text>Make a login please</Text>
+    <View style={ styles.container }>
+      <Text> Make a login please </Text>
       <Button
         title="Log In"
-        onPress={() => navigation.navigate('App')}
+        onPress={ () => navigation.navigate('App') }
       />
     </View>
   );
@@ -17,7 +17,6 @@ export default function LoginScreen({ navigation }) {
 LoginScreen.navigationOptions = {
   title: 'Login',
 };
-
 
 const styles = StyleSheet.create({
   container: {
