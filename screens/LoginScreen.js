@@ -1,17 +1,21 @@
 // import * as WebBrowser from 'expo-web-browser';
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { Button, StyleSheet, Text, View } from 'react-native';
 
-export default function LoginScreen() {
+export default function LoginScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text>Log In</Text>
+      <Text>Make a login please</Text>
+      <Button
+        title="Log In"
+        onPress={() => navigation.navigate('App')}
+      />
     </View>
   );
 }
 
 LoginScreen.navigationOptions = {
-  header: null,
+  title: 'Login',
 };
 
 
